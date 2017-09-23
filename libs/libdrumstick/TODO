@@ -1,0 +1,25 @@
+Functions from ALSA library reported by chkcoverage.
+The following functions won't be used in drumstick.  
+
+MISC (event filter)
+
+snd_seq_change_bit
+snd_seq_get_bit
+snd_seq_set_bit
+snd_seq_unset_bit
+
+CLIENT - private functions
+
+snd_seq_hw_open
+snd_seq_hw_ops
+snd_seq_create_event
+snd_seq_event_types
+
+TIMER - private functions
+
+snd_timer_async
+snd_timer_name
+snd_timer_hw_open
+snd_timer_nonblock
+snd_timer_query_hw_open
+snd_timer_type

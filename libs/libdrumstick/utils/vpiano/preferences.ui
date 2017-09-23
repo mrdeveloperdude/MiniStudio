@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PreferencesClass</class>
+ <widget class="QDialog" name="PreferencesClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>270</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Preferences</string>
+  </property>
+  <layout class="QGridLayout">
+   <item row="2" column="2">
+    <widget class="QSpinBox" name="spinVelocity">
+     <property name="maximum">
+      <number>127</number>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QSpinBox" name="spinInChan">
+     <property name="maximum">
+      <number>15</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="lblOutChan">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Output Channel</string>
+     </property>
+     <property name="buddy">
+      <cstring>spinOutChan</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QSpinBox" name="spinBaseOctave">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>9</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QLabel" name="lblNumKeys">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Number of keys</string>
+     </property>
+     <property name="buddy">
+      <cstring>spinNumKeys</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="lblVelocity">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Velocity</string>
+     </property>
+     <property name="buddy">
+      <cstring>spinVelocity</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="lblInChan">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Input Channel</string>
+     </property>
+     <property name="buddy">
+      <cstring>spinInChan</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="4">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="lblBaseOctave">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Base octave</string>
+     </property>
+     <property name="buddy">
+      <cstring>spinBaseOctave</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QSpinBox" name="spinOutChan">
+     <property name="maximum">
+      <number>15</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QSpinBox" name="spinNumKeys">
+     <property name="minimum">
+      <number>12</number>
+     </property>
+     <property name="maximum">
+      <number>120</number>
+     </property>
+     <property name="value">
+      <number>88</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="lblStartingKey">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Starting Key</string>
+     </property>
+     <property name="buddy">
+      <cstring>comboNotes</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QComboBox" name="comboNotes">
+     <property name="currentIndex">
+      <number>5</number>
+     </property>
+     <property name="maxVisibleItems">
+      <number>12</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>C</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>C#</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>D</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>D#</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>F</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>F#</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G#</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A#</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>spinInChan</tabstop>
+  <tabstop>spinOutChan</tabstop>
+  <tabstop>spinVelocity</tabstop>
+  <tabstop>spinBaseOctave</tabstop>
+  <tabstop>spinNumKeys</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>PreferencesClass</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>PreferencesClass</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>14</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

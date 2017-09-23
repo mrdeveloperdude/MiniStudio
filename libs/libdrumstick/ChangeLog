@@ -1,0 +1,158 @@
+2015-12-29
+    * release 1.0.2
+
+2015-10-10
+    * RT library: fixed ticket #6 - MIDI input connection on Mac OSX
+
+2015-08-20
+    * release 1.0.1
+
+2015-04-26
+    * RT library: fixed ticket #4: ALSA Midi Input not working
+
+2014-11-22
+    * RT library: fixed windows midi input
+
+2014-08-30
+    * release 1.0.0
+
+2014-08-02
+    * vpiano using RT library
+
+2014-07-26
+    * documentation updates
+
+2014-04-27
+    * RT library: OSS backend
+
+2014-04-13
+    * RT library: FluidSynth backend
+
+2014-03-30
+    * RT library: Windows backend
+
+2014-02-09
+    * RT library: Mac OSX backend
+
+2014-02-09
+    * RT library: Network and ALSA backends
+
+2013-12-31
+    * Qt5 compatibility
+
+2010-09-13
+    * fixed dumpove: file header text
+
+2010-09-08
+    * documentation updated
+    * release 0.5.0
+
+2010-09-08
+    * remaining warnings removed 
+    * guiplayer simplified, and optimizations
+    * compile with -fvisibility=hidden if it is available
+    * compile always with -fexceptions
+    * fixes in both buildsystems, cmake and qmake  
+
+2010-09-02 
+    * Use RealtimeKit support for the MIDI input thread. 
+
+2010-08-31
+    * OVE file format support, by Rui Fan <vanferry@gmail.com>
+    * guiplayer adds OVE format playback
+
+2010-07-24
+    * Fixed static build support
+
+2010-07-12
+    * removed PCH build option
+    * release 0.4.1
+    
+2010-07-11
+    * Fixed bug in class SequencerInputThread: realtime priority must be applied 
+      in run() instead of start() to avoid changing the scheduling policy of the
+      parent. This is a problem when running FluidSynth in systems affected by a  
+      glib-2.22 bug that has not yet been fixed.
+      Reference: https://bugzilla.gnome.org/show_bug.cgi?id=599079  
+
+2010-07-07
+    * smfplayer renamed as guiplayer, with a new windows layout and
+      supporting Cakewalk WRK files playback
+    * release 0.4.0
+    
+2010-07-03
+    * subdirectory "tests" renamed as "utils".
+    * visibility attribute for public classes.
+    
+2010-06-10
+    * Compile fix for 0.3.2
+    * release 0.3.2a
+
+2010-06-09
+    * Command line arguments for all the utilities/test programs.
+
+2010-05-28
+    * fix a crash in drumstick-sysinfo when a timer module is not loaded. 
+    
+2010-05-13
+    * Man pages for the utilities/test programs.
+
+2010-05-10
+    * New test program: DrumGrid
+
+2010-04-19
+    * Release 0.3.1
+    * Allow to build drumstick-file library under Windows
+    * New method MidiClient::parseAddress() replacing the ALSA function 
+      snd_seq_parse_address() in MidiPort::subscribeTo() and similar methods.
+    * Fixed MidiClient::getAvailableInputs() and getAvailableOutputs() forcing 
+      to always retrieve the clients list.
+
+2010-03-09
+    * Release 0.3.0
+    * API changes:
+      SequencerEvent::isChannel() returns true for SND_SEQ_EVENT_NOTE 
+      QueueTimer::setId(const TimerId& id) new method overload
+      Timer::bestGlobalTimerId() new static function
+      getRuntimeALSALibraryVersion() new global function
+      getRuntimeALSALibraryNumber() new global function
+      getRuntimeALSADriverVersion() new global function
+      getRuntimeALSADriverNumber() new global function
+    
+2010-03-02
+    * New class QWrk, for reading Cakewalk files
+
+2010-02-17
+    * Split: drumstick-file and drumstick-alsa 
+
+2010-01-07
+    * Renamed to 'drumstick' and moved to a new project repository 
+
+2009-12-27
+    * Release 0.2.0
+    * API changes:
+      SequencerInputThread::start() added a priority parameter
+      SequencerEvent::isChannel() new static method
+      SequencerOutputThread::stopped() method removed, converted into a signal
+      SequencerOutputThread::start() added a priority parameter
+      SequencerOutputThread::shutupSound() method removed
+      SequencerOutputThread::stopRequested() method added
+      QSmfPrivate class added
+      QSmf::writeMetaEvent() new method overload
+      QSmf::getTextCodec() new method
+      QSmf::setTextCodec() new method
+      QSmf::signalSMFVariable() signal dropped
+      QSmf::signalSMFMetaUnregistered() signal added
+      Subscriber::operator==() removed unimplemented operator prototype
+
+2009-08-27
+    * Public release 0.1.0
+
+2008-12-29 0.0.2pre5
+    * Snapshot included in kmetronome-0.9.0 and kmidimon-0.6.0
+
+2008-11-09 0.0.2pre1
+    * Initial pre-release
+
+2008-05-12 0.0.1
+    * Development started

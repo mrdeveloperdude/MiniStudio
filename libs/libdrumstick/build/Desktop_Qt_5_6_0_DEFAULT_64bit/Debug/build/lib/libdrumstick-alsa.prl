@@ -1,0 +1,5 @@
+QMAKE_PRL_BUILD_DIR = /home/lennart/Desktop/MiniStudio/drumstick/build/Desktop_Qt_5_6_0_DEFAULT_64bit/Debug/library/alsa
+QMAKE_PRO_INPUT = alsa.pro
+QMAKE_PRL_TARGET = libdrumstick-alsa.so.1.0.2
+QMAKE_PRL_CONFIG = lex yacc debug exceptions depend_includepath testcase_targets import_plugins import_qpa_plugin qt warn_on link_prl incremental shared qpa no_mocdepend qt_no_framework linux unix posix gcc c++11 debug qml_debug qt thread create_prl have_target dll debug_info dbusadaptors dbusinterfaces moc resources
+QMAKE_PRL_VERSION = 1.0.2

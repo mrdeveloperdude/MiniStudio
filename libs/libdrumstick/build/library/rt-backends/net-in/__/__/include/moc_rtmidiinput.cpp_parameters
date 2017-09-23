@@ -1,0 +1,11 @@
+-I/home/lennart/Desktop/MiniStudio/drumstick/library/include
+-I/home/lennart/Desktop/MiniStudio/drumstick/library
+-I/home/lennart/Desktop/MiniStudio/drumstick/library/rt-backends/net-in/../common
+-I/home/lennart/Desktop/MiniStudio/drumstick/library/rt-backends/net-in
+-I/home/lennart/Desktop/MiniStudio/drumstick/build/library/rt-backends/net-in
+-DVERSION=1.0.2
+-DRTKIT_SUPPORT
+-DQT_PLUGIN
+-o
+/home/lennart/Desktop/MiniStudio/drumstick/build/library/rt-backends/net-in/__/__/include/moc_rtmidiinput.cpp
+/home/lennart/Desktop/MiniStudio/drumstick/library/include/rtmidiinput.h

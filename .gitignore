@@ -1,0 +1,6 @@
+build/*
+
+libs/libopencl/OpenCL-ICD-Loader/*
+
+*.pro.user
+

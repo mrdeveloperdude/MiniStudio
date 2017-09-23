@@ -1,0 +1,11 @@
+-I/home/lennart/Desktop/MiniStudio/drumstick/library/include
+-I/home/lennart/Desktop/MiniStudio/drumstick/library
+-I/home/lennart/Desktop/MiniStudio/drumstick/library/rt-backends/oss-in/../common
+-I/home/lennart/Desktop/MiniStudio/drumstick/library/rt-backends/oss-in
+-I/home/lennart/Desktop/MiniStudio/drumstick/build/library/rt-backends/oss-in
+-DVERSION=1.0.2
+-DRTKIT_SUPPORT
+-DQT_PLUGIN
+-o
+/home/lennart/Desktop/MiniStudio/drumstick/build/library/rt-backends/oss-in/moc_ossinput.cpp
+/home/lennart/Desktop/MiniStudio/drumstick/library/rt-backends/oss-in/ossinput.h

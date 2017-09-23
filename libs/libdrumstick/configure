@@ -1,0 +1,10 @@
+#!/bin/bash
+# a typical configuration for production usage...
+mkdir -p build
+cd build
+cmake .. -DCMAKE_CXX_FLAGS="-W -Wall" \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=/usr/local \
+	-DSTATIC_DRUMSTICK=NO \
+	-DUSE_DBUS=YES \
+	-DENABLE_PCH=NO $*

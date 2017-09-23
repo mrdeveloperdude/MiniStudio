@@ -1,0 +1,13 @@
+-I/home/lennart/Desktop/MiniStudio/drumstick/library/include
+-I/home/lennart/Desktop/MiniStudio/drumstick/library
+-I/home/lennart/Desktop/MiniStudio/drumstick/utils
+-I/home/lennart/Desktop/MiniStudio/drumstick/build/utils
+-I/home/lennart/Desktop/MiniStudio/drumstick/utils/common
+-I/home/lennart/Desktop/MiniStudio/drumstick/build/utils/common
+-I/home/lennart/Desktop/MiniStudio/drumstick/utils/dumpove
+-I/home/lennart/Desktop/MiniStudio/drumstick/build/utils/dumpove
+-DVERSION=1.0.2
+-DRTKIT_SUPPORT
+-o
+/home/lennart/Desktop/MiniStudio/drumstick/build/utils/dumpove/moc_dumpove.cpp
+/home/lennart/Desktop/MiniStudio/drumstick/utils/dumpove/dumpove.h
